@@ -11,3 +11,26 @@ class Pet:
         print(f'Age = {self.age}')
         print(f'Gender = {self.gender}')
 
+class Dog(Pet):
+    def __init__(self, name, species, age, gender, breed):
+        super().__init__(name, species, age, gender)
+        self._breed = breed
+
+    def get_info(self):
+        super().get_info()
+        print(f'Breed = {self._breed}')
+
+    def speak(self):
+        return 'WOOF!'
+        
+class Cat(Pet):
+    def __init__(self, name, species, age, gender, color):
+        super().__init__(name, species, age, gender)
+        self._color = color
+
+    def get_info(self):
+        super().get_info()
+        print(f'Color = {self._color}')
+    
+    def speak(self):
+        return 'MEOW!'
