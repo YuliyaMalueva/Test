@@ -1,0 +1,13 @@
+class Pet:
+    def __init__(self, name, species, age, gender):
+        self.name = name
+        self.species = species
+        self.age = age
+        self.gender = gender
+        
+    def get_info(self):
+        print(f'Name = {self.name}')
+        print(f'Species = {self.species}')
+        print(f'Age = {self.age}')
+        print(f'Gender = {self.gender}')
+
