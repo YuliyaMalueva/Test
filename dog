@@ -1,0 +1,11 @@
+class Dog(Pet):
+    def __init__(self, name, species, age, gender, breed):
+        super().__init__(name, species, age, gender)
+        self._breed = breed
+
+    def get_info(self):
+        super().get_info()
+        print(f'Breed = {self._breed}')
+
+    def speak(self):
+        return 'WOOF!'
